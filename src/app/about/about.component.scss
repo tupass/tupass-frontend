@@ -1,0 +1,44 @@
+#about {
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    padding-bottom: 90px;
+}
+
+.container {
+    padding-top: 2em;
+}
+
+table {
+    width: 100%;
+}
+
+
+#about h1 mat-icon {
+    vertical-align: sub;
+}
+
+#about a {
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+.background-darkgreen {
+    background-color: #3fb53f;
+}
+
+.background-green {
+    background-color: #66ff00b7;
+}
+
+.background-yellow {
+    background-color: #ffd900
+}
+
+.background-red {
+    background-color: #ff4800;
+}
+
+.background-darkred {
+    background-color: red;
+}

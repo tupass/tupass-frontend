@@ -1,0 +1,9 @@
+<div class="cont">
+  <div [className]="updateColor()">
+    <mat-progress-spinner class="spinner background" [mode]="'determinate'" [value]="'100'" [color]="'primary'"></mat-progress-spinner>
+    <mat-progress-spinner class="spinner primary" [mode]="'determinate'" [value]="value"></mat-progress-spinner>
+  </div>
+  <div class="spinner-text">
+    {{ value }}%
+  </div>
+</div>

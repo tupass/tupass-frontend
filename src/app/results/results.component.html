@@ -1,0 +1,168 @@
+<div *ngIf="result != null" [@fadeAnimation]>
+  <mat-card>
+    <mat-card-title>
+      <div class="pull-results" fxLayout="row">
+        <div fxFlex fxLayoutAlign="start center" i18n="@@strengthResult">
+          Strength
+        </div>
+        <div fxFlex="23px">
+          <span [satPopoverAnchorFor]="popoverStrength" (tap)="popoverStrength.toggle()" hasBackdrop
+            (mouseenter)="popoverStrength.open()" (mouseleave)="popoverStrength.close()">
+            <mat-icon>help_outline</mat-icon>
+          </span>
+        </div>
+      </div>
+    </mat-card-title>
+    <mat-card-content>
+      <div [className]="updateColor()">
+        <mat-progress-bar [mode]="'determinate'" [value]="result.strength.score">
+        </mat-progress-bar>
+      </div>
+      <div fxLayout="row">
+        <div fxFlex>
+          {{ result.strength.message }}
+        </div>
+        <div>
+          {{ result.strength.score }}%
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div fxLayout="row" fxLayoutGap="10px" fxLayout.lt-sm="column">
+    <mat-card fxFlex>
+      <mat-card-title>
+        <div class="pull-results" fxLayout="row">
+          <div fxFlex fxLayoutAlign="start center" i18n="@@lengthResult">
+            Length
+          </div>
+          <div fxFlex="23px">
+            <span [satPopoverAnchorFor]="popoverLength" (tap)="popoverLength.toggle()" hasBackdrop
+              (mouseenter)="popoverLength.open()" (mouseleave)="popoverLength.close()">
+              <mat-icon>help_outline</mat-icon>
+            </span>
+          </div>
+        </div>
+      </mat-card-title>
+      <mat-card-content>
+        <div class="result-content" fxLayout="row" fxLayout.sm="column">
+          <div class="spinner-padding">
+            <app-color-spinner [metric]="'length'" [value]="result.length.score"></app-color-spinner>
+          </div>
+          <div>
+            <div class="result-message">{{ result.length.message }}</div>
+            <p>
+              {{ result.length.hint }}
+            </p>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex>
+      <mat-card-title>
+        <div class="pull-results" fxLayout="row">
+          <div fxFlex fxLayoutAlign="start center" i18n="@@complexityResult">
+            Complexity
+          </div>
+          <div fxFlex="23px">
+            <span [satPopoverAnchorFor]="popoverComplexity" (tap)="popoverComplexity.toggle()" hasBackdrop
+              (mouseenter)="popoverComplexity.open()" (mouseleave)="popoverComplexity.close()">
+              <mat-icon>help_outline</mat-icon>
+            </span>
+          </div>
+        </div>
+      </mat-card-title>
+      <mat-card-content>
+        <div class="result-content" fxLayout="row" fxLayout.sm="column">
+          <div class="spinner-padding">
+            <app-color-spinner [metric]="'complexity'" [value]="result.complexity.score"></app-color-spinner>
+          </div>
+          <div>
+            <div class="result-message">{{ result.complexity.message }}</div>
+            <p>
+              {{ result.complexity.hint }}
+            </p>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex>
+      <mat-card-title>
+        <div class="pull-results" fxLayout="row">
+          <div fxFlex fxLayoutAlign="start center" i18n="@@unpredictabilityResult">
+            Unpredictability
+          </div>
+          <div fxFlex="23px">
+            <span [satPopoverAnchorFor]="popoverPredictability" (tap)="popoverPredictability.toggle()" hasBackdrop
+              (mouseenter)="popoverPredictability.open()" (mouseleave)="popoverPredictability.close()">
+              <mat-icon>help_outline</mat-icon>
+            </span>
+          </div>
+        </div>
+      </mat-card-title>
+      <mat-card-content>
+        <div class="result-content" fxLayout="row" fxLayout.sm="column">
+          <div class="spinner-padding">
+            <app-color-spinner [metric]="'predictability'"
+              [value]="predictabilityTransformation(result.predictability.score)"></app-color-spinner>
+          </div>
+          <div>
+            <div class="result-message">{{ result.predictability.message }}</div>
+            <p>
+              {{ result.predictability.hint }}
+            </p>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<sat-popover #popoverStrength horizontalAlign="after" verticalAlign="below">
+  <mat-card class="mat-elevation-z9">
+    <mat-card-content i18n="@@popoverStrengthResult">
+      <p>This score represents the total strength of your password and is a combination of all metrics (length,
+        complexity and predictability).</p>
+      <p></p>
+      <p><strong>General Hints:</strong></p>
+      <ul>
+        <li>Don't use sequences on your keyboard.</li>
+        <li>Avoid using sequences of characters.</li>
+        <li>Make sure nobody is looking over your shoulder.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</sat-popover>
+
+<sat-popover #popoverLength horizontalAlign="after" verticalAlign="below">
+  <mat-card class="mat-elevation-z9">
+    <mat-card-content i18n="@@popoverLengthResult">
+      <p>This displays the strength of the password in terms of length.</p>
+    </mat-card-content>
+  </mat-card>
+</sat-popover>
+
+<sat-popover #popoverComplexity horizontalAlign="after" verticalAlign="below">
+  <mat-card class="mat-elevation-z9">
+    <mat-card-content i18n="@@popoverComplexityResult">
+      <p>This score is calculated based on the character sets used.</p>
+      <p>Examples of character sets are lowercase letters (abc), uppercase letters (XYZ), numbers (123) or symbols
+        ($%&).</p>
+    </mat-card-content>
+  </mat-card>
+</sat-popover>
+
+<sat-popover #popoverPredictability horizontalAlign="after" verticalAlign="below">
+  <mat-card class="mat-elevation-z9">
+    <mat-card-content i18n="@@popoverPredictabilityResult">
+      <p>We compare the input with 50.000 common passwords. Is the input very similar to one of these passwords, it is
+        easy to predict.</p>
+      <p></p>
+      <p><strong>Hints:</strong></p>
+      <ul>
+        <li>Avoid substitutions like '@' for 'a' or '$' for 's'.</li>
+        <li>Don't use names, usernames or emails.</li>
+        <li>Don't use dates or years.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</sat-popover>

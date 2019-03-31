@@ -1,0 +1,31 @@
+<mat-progress-bar *ngIf="ps.waiting" [@fadeAnimation] [mode]="'indeterminate'"></mat-progress-bar>
+<div id="pwinput" fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="97" fxFlex.gt-md="1200px">
+      <div class="text-center" fxLayout="row wrap" fxLayoutAlign="center">
+        <mat-icon id="welcome-icon">lock</mat-icon>
+        <h1 class="welcome" i18n="@@welcome">Welcome to TUPass!</h1>
+      </div>
+      <h1 id="test" class="text-center">{{update()}}</h1>
+      <app-password-input></app-password-input>
+      <app-results></app-results>
+    </div>
+  </div>
+  <div fxFlex></div>
+  <div fxLayout="column" fxLayoutAlign="end center">
+    <button id="arrow-down" color='primary' pageScroll [pageScrollDuration]="850" [pageScrollEasing]="funEasing"
+      href="#about" mat-fab i18n-matTooltip="@@learnMoreTooltip" matTooltip="Learn more">
+      <mat-icon aria-label="Learn more">expand_more</mat-icon>
+    </button>
+  </div>
+</div>
+<div fxLayout="column">
+  <app-about></app-about>
+</div>
+<div id="arrow-up-container" [style.opacity]="belowAboutPage ? '1' : '0'"
+  [style.visibility]="belowAboutPage ? 'visible' : 'hidden'">
+  <button id="arrow-up" color='primary' pageScroll [pageScrollDuration]="850" [pageScrollEasing]="funEasing"
+    [style.transform]="belowAboutPage ? 'scale(1)' : 'scale(0)'" href="#pwinput" mat-fab>
+    <mat-icon aria-label="Back top">expand_less</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="learnMoreTooltip" datatype="html">
+        <source>Learn more</source>
+        <target>Erfahre mehr</target>
+      </trans-unit>
+      <trans-unit id="inputPlaceholder" datatype="html">
+        <source>Enter a password to evaluate</source>
+        <target>Gib ein Passwort zur Evaluation ein</target>
+      </trans-unit>
+      <trans-unit id="tooLongInput" datatype="html">
+        <source>Your input is too long</source>
+        <target>Die Eingabe ist zu lang</target>
+      </trans-unit>
+      <trans-unit id="nonASCIICharsInside" datatype="html">
+        <source>
+          Please remove the following non-ASCII-characters from your input: <x id="INTERPOLATION" equiv-text="{{ getFaultyCharacters() }}"/>
+        </source>
+        <target>
+          Bitte löschen Sie die folgenden nicht-ASCII-Zeichen aus der Eingabe: <x id="INTERPOLATION" equiv-text="{{ getFaultyCharacters() }}"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="invalidInput" datatype="html">
+        <source>Invalid input</source>
+        <target>Ungültige Eingabe</target>
+      </trans-unit>
+      <trans-unit id="noConnection" datatype="html">
+        <source>Unable to process your request, please try again later. In the meantime, you
+      can look at pictues of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>these cute kittens<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Leider konnte die Anfrage nicht bearbeitet werden. Versuche es später noch einmal. In der Zwischenzeit 
+      kannst Du dir Bilder von <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>diesen süßen Kätzchen<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> anschauen.</target>
+      </trans-unit>
+      <trans-unit id="strengthResult" datatype="html">
+        <source>Strength</source>
+        <target>Stärke</target>
+      </trans-unit>
+      <trans-unit id="lengthResult" datatype="html">
+        <source>Length</source>
+        <target>Länge</target>
+      </trans-unit>
+      <trans-unit id="complexityResult" datatype="html">
+        <source>Complexity</source>
+        <target>Komplexität</target>
+      </trans-unit>
+      <trans-unit id="unpredictabilityResult" datatype="html">
+        <source>Unpredictability</source>
+        <target>Unvorhersagbarkeit</target>
+      </trans-unit>
+      <trans-unit id="popoverStrengthResult" datatype="html">
+    <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>This score represents the total strength of your password and is a combination of all metrics (length,
+        complexity and predictability).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>General Hints:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Don&apos;t use sequences on your keyboard.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Avoid using sequences of characters.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Make sure nobody is looking over your shoulder.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+      <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+    </source>
+    <target>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Dieser Wert spiegelt die totale Stärke deines Passwortes wider und ist eine Kombination von allen Metriken (Länge,
+        Komplexität und Vorhersagbarkeit).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Generelle Hinweise:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Verwende keine Sequenzen auf der Tastatur.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Vermeide es, Sequenzen von Zeichen wiederzuverwenden.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Achte darauf, dass dir niemand über deine Schulter schaut.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+      <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+    </target>
+      </trans-unit>
+      <trans-unit id="popoverLengthResult" datatype="html">
+     <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>This displays the strength of the password in terms of length.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+     </source>
+     <target>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Dies spiegelt die Stärke des Passwortes im Bezug auf die Länge wider.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </target>
+      </trans-unit>
+      <trans-unit id="popoverComplexityResult" datatype="html">
+        <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>This score is calculated based on the character sets used.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Examples of character sets are lowercase letters (abc), uppercase letters (XYZ), numbers (123) or symbols
+        ($%&amp;).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </source>
+     <target>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Dieser Wert wird basierend auf den genutzten Zeichensätzen berechnet.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Verwendete Zeichensätze: Kleinbuchstaben (abc), Großbuchstaben (XYZ), Zahlen (123) oder Sonderzeichen
+        ($%&amp;).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </target>
+      </trans-unit>
+      <trans-unit id="popoverPredictabilityResult" datatype="html">
+        <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>We compare the input with 50.000 common passwords. Is the input very similar to one of these passwords, it is
+        easy to predict.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Hints:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Avoid substitutions like &apos;@&apos; for &apos;a&apos; or &apos;$&apos; for &apos;s&apos;.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Don&apos;t use names, usernames or emails.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Don&apos;t use dates or years.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+      <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+    </source>
+    <target>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Wir vergleichen die Eingabe mit 50.000 häufig genutzten Passwörtern. Ist die Eingabe sehr ähnlich zu einem dieser Passwörter,
+        ist es einfach vorherzusagen.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Hinweise:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Vermeide Substitutionen wie &apos;@&apos; für &apos;a&apos; oder &apos;$&apos; für &apos;s&apos;.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Nutze keine Namen, Nutzernamen oder Email-Adressen.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Vermeide Datum und Jahrzahl.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+      <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+    </target>
+      </trans-unit>
+      <trans-unit id="download" datatype="html">
+        <source>Download</source>
+        <target>Download</target>
+      </trans-unit>
+       <trans-unit id="downloadExplanation" datatype="html">
+        <source>This project is open source. You can find the code at <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      You can also find a local version <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>available for download there<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Dieses Projekt ist Open Source. Den Code kannst du auf <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> finden.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      Außerdem gibt es dort eine lokale Version <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>zum Download<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
+      </trans-unit>
+      <trans-unit id="titleAboutPage" datatype="html">
+        <source>Rating Explained</source>
+    <target>Erklärung der Bewertung</target>
+      </trans-unit>
+      <trans-unit id="metricsCalculation" datatype="html">
+        <source>Metrics Calculation</source>
+        <target>Berechnung der Metriken</target>
+      </trans-unit>
+      <trans-unit id="howCalculatedAboutPage" datatype="html">
+        <source>First, your entered password will be examined for three metrics:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <target>Zuerst wird dein eingegebenes Passwort auf drei Metriken untersucht:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="expansionLengthAboutPage" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            1. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Length<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        The password length simply is the number of characters of the input string.
+        It is generally a good idea to use passwords as long as possible to prevent simple <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Brute-Force Attacks<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Choosing a short password results in a poor rating because short passwords can be guessed with brute
+        force.
+      </source>
+      <target>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            1. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Länge<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        Die Passwortlänge ist die Anzahl von Zeichen in der Eingabe.
+        Generell ist es eine gute Idee möglichst lange Zeichenketten zu nutzen, um einfache <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Brute-Force Attacken<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zu verhindern.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Wenn man ein kurzes Passwort wählt, resultiert dies in einer schlechten Bewertung, weil kurze Passwörter durch
+        Brute-Force-Attacken geraten werden können.
+      </target>
+      </trans-unit>
+      <trans-unit id="expansionComplexityAboutPage" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            2. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Complexity<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        To calculate the password&apos;s complexity, our algorithm knows four different character classes:
+        <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Lowercase letters<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (26 chars), <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Uppercase letters<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (26 chars), <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Digit characters<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (10 chars) and
+        <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Special characters<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (33 chars).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        The algorithm calculates the number of possible character sets for the current length, taking the used character
+        classes into account.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        For the complexity score this result is rewarded based on the number of character classes used.
+      </source>
+      <target>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            2. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Komplexität<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        Um die Komplexität des Passwortes zu berechnen, nutzt unser Algorithmus vier verschiedene Zeichensätze:
+        <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Kleinbuchstaben<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (26 Zeichen), <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Großbuchstaben<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (26 Zeichen), <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Ziffern<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (10 Zeichen) und
+        <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sonderzeichen<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (33 Zeichen).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Der Algorithmus berechnet die Anzahl von möglichen Zeichenkombinationen für die aktuelle Länge unter Einbeziehung der 
+        genutzten Zeichensätzen.
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Für den Wert der Komplexität wird das Ergebnis basierend auf der Anzahl von genutzten Zeichensätzen belohnt.
+      </target>
+      </trans-unit>
+      <trans-unit id="expansionPredictabilityAboutPage" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            3. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Predictability<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        A password will be predictable if it is similar to phrases in a common password list. We use a list of 50.000
+        common passwords.
+        To get the predictability, we calculate the number of editing operations aka. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Levenshtein Distance<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> between the
+        input and every entry of our password list. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        The calculation also recognizes <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>leetspeak<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        characters and replaces them in single-operation distance.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        This means that a string typed like <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>P@$$w0rd<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> will be similar to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>password<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and therefore not be
+        considered secure.
+      </source>
+      <target>
+        <x id="START_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;mat-expansion-panel-header&gt;"/>
+          <x id="START_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;mat-panel-title&gt;"/>
+            3. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vorhersagbarkeit<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>
+          <x id="CLOSE_TAG_MAT-PANEL-TITLE" ctype="x-mat-panel-title" equiv-text="&lt;/mat-panel-title&gt;"/>
+        <x id="CLOSE_TAG_MAT-EXPANSION-PANEL-HEADER" ctype="x-mat-expansion-panel-header" equiv-text="&lt;/mat-expansion-panel-header&gt;"/>
+        Ein Passwort ist vorhersagbar, wenn es ähnlich zu einem Eintrag in einer Passwortliste mit oft verwendeten Passwörtern ist. Unsere Liste umfasst 50.000
+        Passwörter.
+        Zur Bestimmung der Vorhersagbarkeit berechnen wir die Anzahl der Bearbeitungsoperationen aka. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Levenshtein Distanz<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zwischen der Eingabe 
+        und jedem Eintrag in der Passwortliste. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Die Berechung erkennt auch <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Leetspeak<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>-Zeichen 
+        und ersetzt diese mit einer Distanz einer Einzeloperation.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Dies bedeutet, dass eine Zeichenkette wie <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>P@$$w0rt<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ähnlich zu <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Passwort<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ist, also nicht 
+        ausreichend sicher.
+      </target>
+      </trans-unit>
+      <trans-unit id="finalComposation" datatype="html">
+        <source>Finally, the metrics will be graded and matched into predefined <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>strength-classes<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <target>Schlussendlich werden die Metriken bewertet und in vordefinierte <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Stärkeklassen<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> eingeteilt.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="totalStrengthCalculationAboutPage" datatype="html">
+        <source>Total Strength Calculation</source>
+        <target>Berechnung der Gesamtstärke</target>
+      </trans-unit>
+      <trans-unit id="finalStep1ExplanationAboutPage" datatype="html">
+        <source>After all metrics have been graded, the password strength can be concluded with a predefined rule base.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <target>Nachdem alle Metriken berechnet wurden, wird in einem finalen Schritt die Gesamtstärke der Eingabe mittels einer vordefinierten Regelmenge bestimmt.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="finalStep2ExplanationAboutPage" datatype="html">
+        <source>In most cases several conclusions can be drawn. All conclusions are weighted and added together. In the end a single
+    strength value is returned that describes the overall strength of the entered password.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></source>
+        <target>In den meisten Fällen können mehrere Schlussfolgerungen getroffen werden. Alle möglichen Schlussfolgerungen werden gewichtet und zusammen addiert. Am Schluss wird ein einzelnes Ergebnis angezeigt, 
+    welches die Gesamtstärke des Passwortes beschreibt.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="numberTableAboutPage" datatype="html">
+        <source> No. </source>
+        <target> Num. </target>
+      </trans-unit>
+      <trans-unit id="lengthTableAboutPage" datatype="html">
+        <source> Length </source>
+        <target> Länge </target>
+      </trans-unit>
+      <trans-unit id="complexityTableAboutPage" datatype="html">
+        <source> Complexity </source>
+        <target> Komplexität </target>
+      </trans-unit>
+      <trans-unit id="predictabilityTableAboutPage" datatype="html">
+        <source> Predictability </source>
+        <target> Vorhersagbarkeit </target>
+      </trans-unit>
+      <trans-unit id="classTableAboutPage" datatype="html">
+        <source> Classification (Password Strength) </source>
+        <target> Klassifikation (Passwortstärke) </target>
+      </trans-unit>
+      <trans-unit id="welcome" datatype="html">
+        <source>Welcome to TUPass!</source>
+        <target>Willkommen bei TUPass!</target>
+      </trans-unit>
+      <trans-unit id="noProvidingRealPasswords" datatype="html">
+        <source>Do not provide real passwords!</source>
+        <target>Nutze keine echten Passwörter!</target>
+      </trans-unit>
+      <trans-unit id="localVersionRunning" datatype="html">
+        <source>This is the local version running.</source>
+        <target>Dies ist die lokale Version.</target>
+      </trans-unit>
+      <trans-unit id="enterRealPasswords" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Why you should not enter real passwords<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Warum man keine richtigen Passwörter eingeben sollte.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="localVersionTitle" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Local version<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Lokale Version<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+      </trans-unit>
+      <trans-unit id="enterRealPasswordsContent" datatype="html">
+        <source>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>It is very important to keep passwords secret. So you should only enter your password on sites you
+                created the password for in the first place.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Although we give our best to keep your input safe, it may be possible that third parties intercept your
+                password.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <target>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Es ist sehr wichtig, Passwörter geheim zu halten. Gib deshalb reale Passwörter nur bei den Diensten ein, für welche
+              diese erstellt wurden und genutzt werden.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Auch wenn wir unser Bestes geben um die Eingabe zu sichern, könnte es Dritten möglich sein, an das 
+              Passwort zu gelangen.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="localVersionContent" datatype="html">
+        <source>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>You are currently running the local version of TUPass.
+                This means the whole application runs on your system without Internet access.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Please make sure that the address bar in your browser is pointing to <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>localhost:8000<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <target>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Du benutzt aktuell die lokale Version von TUPass.
+            Die ganze Anwendung läuft auf deinem System ohne Internet.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Bitte stelle sicher, dass die Adressleiste <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>localhost:8000<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> anzeigt.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="privacyPolicy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="legalNotes" datatype="html">
+        <source>Legal Notes</source>
+        <target>Impressum</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,30 @@
+language: node_js
+node_js: '10'
+stages:
+- name: test
+- name: build
+  if: tag IS present
+
+before_script:
+- npm install -g @angular/cli
+
+jobs:
+  include:
+  - stage: test
+    name: Linter
+    script: ng lint
+  - stage: build
+    name: Build static files
+    addons:
+      ssh_known_hosts: tupass.pw
+    script:
+      - npm run build-prod
+      - npm run build-prod-de
+    #For deploying to tupass.pw  
+    #after_success:
+    #  - openssl aes-256-cbc -K $encrypted_540cbe82794a_key -iv $encrypted_540cbe82794a_iv
+    #    -in deploy_key.enc -out ./deploy_key -d
+    #  - eval "$(ssh-agent -s)"
+    #  - chmod 600 ./deploy_key
+    #  - ssh-add ./deploy_key
+    #  - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist/tupass-frontend/ tupass@tupass.pw:/var/www/tupass.pw

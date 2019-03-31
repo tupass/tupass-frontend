@@ -1,0 +1,21 @@
+<div class="divider-about">
+  <mat-divider></mat-divider>
+</div>
+<footer fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center" fxLayout.lt-sm="column" fxLayoutGap.lt-sm="10px"
+  fxLayoutAlign.lt-sm="start start">
+  <a href="https://www.tu-darmstadt.de" target="_blank">
+    <img height="50" src="assets/tud_logo.svg" alt="TU Darmstadt">
+  </a>
+  <a href="https://www.tk.informatik.tu-darmstadt.de" target="_blank">
+    <img height="50" src="assets/tk_logo.png" alt="TK">
+  </a>
+  <a href="https://www.cysec.tu-darmstadt.de" target="_blank">
+    <img height="50" src="assets/cysec_logo.png" alt="TK">
+  </a>
+  <a href="https://github.com/tupass" target="_blank">
+    <img height="50" src="assets/github_mark.png" alt="GitHub">
+  </a> 
+  <div fxFlex></div>
+  <a *ngIf="!bundling" href="assets/privacy_policy.html" i18n="@@privacyPolicy">Privacy Policy</a>
+  <a *ngIf="!bundling" href="assets/legal_notes.html" i18n="@@legalNotes">Legal Notes</a>
+</footer>

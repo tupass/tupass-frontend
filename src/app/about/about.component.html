@@ -1,0 +1,100 @@
+<div id="about" fxLayout="row" fxLayoutAlign="center">
+  <div class="container" fxFlex="97" fxFlex.gt-md="1200px">
+    <h1 *ngIf="!bundling" i18n="@@download">Download</h1>
+    <div *ngIf="!bundling" i18n="@@downloadExplanation">This project is open source. You can find the code at <a href="https://github.com/tupass">GitHub</a>.<br>
+      You can also find a local version <a href="https://github.com/tupass/tupass-backend/releases">available for download there</a>.
+    </div>
+    <br><br>
+    <h1 i18n="@@titleAboutPage">
+      Rating Explained
+    </h1>
+    <h2 i18n="@@metricsCalculation">Metrics Calculation</h2>
+    <div i18n="@@howCalculatedAboutPage">First, your entered password will be examined for three metrics:<br></div>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel expanded i18n="@@expansionLengthAboutPage">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            1.&nbsp;<b>Length</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        The password length simply is the number of characters of the input string.
+        It is generally a good idea to use passwords as long as possible to prevent simple <a
+          href="https://en.wikipedia.org/wiki/Brute-force_attack" target="_blank">Brute-Force Attacks</a>.<br>
+        Choosing a short password results in a poor rating because short passwords can be guessed with brute
+        force.
+      </mat-expansion-panel>
+      <mat-expansion-panel i18n="@@expansionComplexityAboutPage">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            2.&nbsp;<b>Complexity</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        To calculate the password's complexity, our algorithm knows four different character classes:
+        <b>Lowercase letters</b> (26 chars), <b>Uppercase letters</b> (26 chars), <b>Digit characters</b> (10 chars) and
+        <b>Special characters</b> (33 chars).<br>
+        <br>
+        The algorithm calculates the number of possible character sets for the current length, taking the used character
+        classes into account.<br>
+        For the complexity score this result is rewarded based on the number of character classes used.
+      </mat-expansion-panel>
+      <mat-expansion-panel i18n="@@expansionPredictabilityAboutPage">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            3.&nbsp;<b>Predictability</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        A password will be predictable if it is similar to phrases in a common password list. We use a list of 50.000
+        common passwords.
+        To get the predictability, we calculate the number of editing operations aka. <a
+          href="https://en.wikipedia.org/wiki/Levenshtein_distance" target="_blank">Levenshtein Distance</a> between the
+        input and every entry of our password list. <br>
+        <br>
+        The calculation also recognizes <a href="https://en.wikipedia.org/wiki/Leet" target="_blank">leetspeak</a>
+        characters and replaces them in single-operation distance.<br>
+        This means that a string typed like <b>P@$$w0rd</b> will be similar to <b>password</b> and therefore not be
+        considered secure.
+      </mat-expansion-panel>
+    </mat-accordion><br>
+    <div i18n="@@finalComposation">Finally, the metrics will be graded and matched into predefined <b>strength-classes</b>.<br></div> 
+    <br>
+    <h2 i18n="@@totalStrengthCalculationAboutPage">Total Strength Calculation</h2>
+    <div i18n="@@finalStep1ExplanationAboutPage">After all metrics have been graded, the password strength can be concluded with a predefined rule base.<br></div>
+    <br>
+    <div i18n="@@finalStep2ExplanationAboutPage">In most cases several conclusions can be drawn. All conclusions are weighted and added together. In the end a single
+    strength value is returned that describes the overall strength of the entered password.<br></div>
+    <br>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z2">
+
+      <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef i18n="@@numberTableAboutPage"> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="length">
+        <th mat-header-cell *matHeaderCellDef i18n="@@lengthTableAboutPage"> Length </th>
+        <td mat-cell *matCellDef="let element"> {{element.length}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="complexity">
+        <th mat-header-cell *matHeaderCellDef i18n="@@complexityTableAboutPage"> Complexity </th>
+        <td mat-cell *matCellDef="let element"> {{element.complexity}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="predictability">
+        <th mat-header-cell *matHeaderCellDef i18n="@@predictabilityTableAboutPage"> Predictability </th>
+        <td mat-cell *matCellDef="let element"> {{element.predictability}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="class" stickyEnd>
+        <th mat-header-cell *matHeaderCellDef i18n="@@classTableAboutPage"> Classification (Password Strength) </th>
+        <td mat-cell *matCellDef="let element"> {{element.class}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[2, 5, 10, 26]" showFirstLastButtons></mat-paginator>
+    <app-footer></app-footer>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+#pwinput {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    padding-top: 2vh;
+}
+
+// Animation
+@keyframes adjusting-learn-more {
+    0% {
+        margin-bottom: 20px;
+    }
+    50% {
+        margin-bottom: 10px;
+    }
+}
+
+#arrow-down {
+    margin-bottom: 20px;
+    animation: adjusting-learn-more 500ms 2 2s, adjusting-learn-more 500ms 2 6s;
+}
+
+#arrow-up-container {
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transition: all .3s;
+}
+
+#arrow-up {
+    transition: all .3s;
+}
+
+mat-progress-bar {
+    position: absolute;
+}
+
+h1 {
+    color: white;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+#welcome-icon {
+    $size: 36px;
+    line-height: $size;
+    height: $size;
+    font-size: 30px;
+    margin-top: -2px;
+    width: $size;
+    color: white;
+}
+
+.blink{
+    animation: blink 1s linear;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}

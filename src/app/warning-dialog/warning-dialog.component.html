@@ -1,0 +1,33 @@
+<div *ngIf="!bundling" fxLayout="row">
+    <div class="mat-error" i18n="@@noProvidingRealPasswords">Do not provide real passwords!</div>
+    <span [satPopoverAnchorFor]="popover" (tap)="popover.toggle()" (mouseenter)="popover.open()"
+        (mouseleave)="popover.close()">
+        <mat-icon>help_outline</mat-icon>
+    </span>
+</div>
+<div *ngIf="bundling" fxLayout="row">
+    <div class="mat-info" i18n="@@localVersionRunning">This is the local version running.</div>
+    <span [satPopoverAnchorFor]="popover" (tap)="popover.toggle()" (mouseenter)="popover.open()"
+        (mouseleave)="popover.close()">
+        <mat-icon>help_outline</mat-icon>
+    </span>
+</div>
+<sat-popover #popover horizontalAlign="after" verticalAlign="below">
+    <mat-card *ngIf="!bundling" class="mat-elevation-z9">
+        <mat-card-content i18n="@@enterRealPasswords"><strong>Why you should not enter real passwords</strong></mat-card-content>
+        <mat-card-content i18n="@@enterRealPasswordsContent">
+            <p>It is very important to keep passwords secret. So you should only enter your password on sites you
+                created the password for in the first place.</p>
+            <p>Although we give our best to keep your input safe, it may be possible that third parties intercept your
+                password.</p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card *ngIf="bundling" class="mat-elevation-z9">
+        <mat-card-content i18n="@@localVersionTitle"><strong>Local version</strong></mat-card-content>
+        <mat-card-content i18n="@@localVersionContent">
+            <p>You are currently running the local version of TUPass.
+                This means the whole application runs on your system without Internet access.</p>
+            <p>Please make sure that the address bar in your browser is pointing to <i>localhost:8000</i>.</p>
+        </mat-card-content>
+    </mat-card>
+</sat-popover>

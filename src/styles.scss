@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Material theming */
+
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$app-primary: mat-palette($mat-indigo);
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($app-theme);
+/* ADDITIONAL STYLES */
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.background circle {
+    stroke: #c5cae9;
+}
+
+.spinner-darkgreen .primary circle {
+    stroke: #3fb53f;
+}
+
+.spinner-green .primary circle {
+    stroke: #66ff00b7;
+}
+
+.spinner-yellow .primary circle {
+    stroke: #ffd900;
+}
+
+.spinner-red .primary circle {
+    stroke: #ff4800;
+}
+
+.spinner-darkred .primary circle {
+    stroke: red;
+}
+
+.progress-darkgreen .mat-progress-bar-fill::after {
+    background-color: #3fb53f;
+}
+
+.progress-green .mat-progress-bar-fill::after {
+    background-color: #66ff00b7;
+}
+
+.progress-yellow .mat-progress-bar-fill::after {
+    background-color: #ffd900
+}
+
+.progress-red .mat-progress-bar-fill::after {
+    background-color: #ff4800;
+}
+
+.progress-darkred .mat-progress-bar-fill::after {
+    background-color: red;
+}
+
+body {
+    background: url("resources/background.png") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
